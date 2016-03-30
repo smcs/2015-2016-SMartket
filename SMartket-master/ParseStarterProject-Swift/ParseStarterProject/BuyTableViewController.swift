@@ -6,6 +6,7 @@
 //  Copyright © 2016 Jason Qian. All rights reserved.
 //
 
+import Parse
 import UIKit
 
 class BuyTableViewController: UITableViewController {

@@ -6,6 +6,7 @@
 //  Copyright © 2016 Jason Qian. All rights reserved.
 //
 
+import Parse
 import UIKit
 
 class SellViewController: UIViewController {
@@ -14,6 +15,32 @@ class SellViewController: UIViewController {
     @IBOutlet var isbn: UITextField!
     @IBOutlet var condition: UITextField!
     @IBOutlet var amount: UITextField!
+    
+    
+    @IBAction func confirmButton(sender: AnyObject) {
+        // saving to Parse!!!
+        /*
+        
+        var gameScore = PFObject(className:"GameScore")
+        
+        gameScore["score"] = 1337
+        gameScore["playerName"] = "Sean Plott"
+        gameScore["cheatMode"] = false
+        
+        gameScore.saveInBackgroundWithBlock {
+        (success: Bool, error: NSError?) -> Void in
+            if (success) {
+                // The object has been saved.
+            } else {
+                // There was a problem, check error.description
+            }
+        }
+
+*/
+
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
