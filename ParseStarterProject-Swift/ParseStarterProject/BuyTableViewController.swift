@@ -9,10 +9,11 @@
 import UIKit
 
 class BuyTableViewController: UITableViewController {
-
+    var NumberOfThings = 10
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        NumberOfThings = 100
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -34,7 +35,8 @@ class BuyTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return NumberOfThings
     }
 
     /*
