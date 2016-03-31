@@ -9,6 +9,7 @@
 import Parse
 import UIKit
 
+@available(iOS 8.0, *)
 class SellViewController: UIViewController {
 
     @IBOutlet var name: UITextField!
@@ -19,24 +20,40 @@ class SellViewController: UIViewController {
     
     @IBAction func confirmButton(sender: AnyObject) {
         // saving to Parse!!!
-        /*
         
-        var gameScore = PFObject(className:"GameScore")
+        let item = PFObject(className: "Data")
         
-        gameScore["score"] = 1337
-        gameScore["playerName"] = "Sean Plott"
-        gameScore["cheatMode"] = false
+        item["name"] = name.text
+        item["price"] = amount.text
+        item["condition"] = condition.text
+        item["ISBN"] = isbn.text
         
-        gameScore.saveInBackgroundWithBlock {
+        item.saveInBackgroundWithBlock {
         (success: Bool, error: NSError?) -> Void in
             if (success) {
-                // The object has been saved.
+        
+                // add to BuyViewController TableList
+                
+                
+                let alertController = UIAlertController(title: "Upload Successful", message: "You have successfully uploaded your item onto the list", preferredStyle: UIAlertControllerStyle.Alert)
+                
+                alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) -> Void in
+                    
+                    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+                    
+                    let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("buyController") as! BuyTableViewController
+                    self.presentViewController(nextViewController, animated:true, completion:nil)
+                }))
+                    
+                    
+                self.presentViewController(alertController, animated: true, completion: nil)
+                
+                
+        
             } else {
-                // There was a problem, check error.description
+                error!.description
             }
         }
-
-*/
 
     }
     
