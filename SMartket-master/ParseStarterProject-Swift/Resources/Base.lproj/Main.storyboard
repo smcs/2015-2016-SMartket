@@ -207,7 +207,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcw-aq-9k4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1942" y="280"/>
+            <point key="canvasLocation" x="1942" y="218"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QpU-24-Gvi">
@@ -269,6 +269,7 @@
                                 <state key="normal" title="Confirm"/>
                                 <connections>
                                     <action selector="confirmButton:" destination="pHZ-cC-INi" eventType="touchUpInside" id="cyE-TF-gAr"/>
+                                    <segue destination="hc8-QG-eFQ" kind="show" id="DBf-Ee-hb4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVd-gR-pki">
@@ -322,7 +323,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kTi-up-om0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1248" y="980"/>
+            <point key="canvasLocation" x="1190" y="1002"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

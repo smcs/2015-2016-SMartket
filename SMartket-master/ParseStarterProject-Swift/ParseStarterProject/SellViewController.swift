@@ -41,8 +41,8 @@ class SellViewController: UIViewController {
                     
                     let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
                     
-                    let nextViewController = storyBoard.instantiateViewControllerWithIdentifier("buyController") as! BuyTableViewController
-                    self.presentViewController(nextViewController, animated:true, completion:nil)
+                   
+                 
                 }))
                     
                     
