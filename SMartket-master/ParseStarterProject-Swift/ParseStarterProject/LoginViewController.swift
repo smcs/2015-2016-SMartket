@@ -60,7 +60,7 @@ class LoginViewController: UIViewController {
             
             
             
-            var user = PFUser()
+            let user = PFUser()
             user.username = username.text
             user.password = password.text
             
@@ -75,6 +75,7 @@ class LoginViewController: UIViewController {
                     // Signup successful
                     print("Sign Up Successful")
                     
+                    self.performSegueWithIdentifier("segue", sender: nil)
                     
                 } else {
                     
