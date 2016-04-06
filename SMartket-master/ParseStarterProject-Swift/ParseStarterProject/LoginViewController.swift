@@ -42,9 +42,9 @@ class LoginViewController: UIViewController {
     @IBAction func signUp(sender: AnyObject) {
      
         
-        if username.text == "" || password.text == "" {
+        if username.text == "" || password.text == "" || phoneNumber.text == "" || email.text = ""{
             
-            displayAlert("Error in form", message: "Please enter a username and password")
+            displayAlert("Error in form", message: "Please enter a username, password, phone and email")
             
             
         } else {
@@ -65,6 +65,9 @@ class LoginViewController: UIViewController {
             let user = PFUser()
             user.username = username.text
             user.password = password.text
+            user.email = email.text
+            
+            
             
             // Parse original Sign Up Function!!!
             user.signUpInBackgroundWithBlock({ (success, error) -> Void in
