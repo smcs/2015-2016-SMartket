@@ -19,6 +19,8 @@ class LoginViewController: UIViewController {
     @IBOutlet var password: UITextField!
     @IBOutlet var signupButton: UIButton!
     @IBOutlet var loginButton: UIButton!
+    @IBOutlet var phoneNumber: UITextField!
+    @IBOutlet var email: UITextField!
     
     var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
     
