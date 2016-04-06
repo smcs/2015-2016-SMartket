@@ -6,6 +6,13 @@
 //  Copyright © 2016 Jason Qian. All rights reserved.
 //
 
+/*
+Make it so that the data is stored in an array. Parse will save the data and we will then call on parse and put this data in an array and then we don't need to store the index numbers. 
+    Call it as a string and just use that as the index
+Don't need to make a seperate class for it.
+
+*/
+
 import Parse
 import UIKit
 
