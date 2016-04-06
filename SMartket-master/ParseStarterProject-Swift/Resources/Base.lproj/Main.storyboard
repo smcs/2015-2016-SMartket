@@ -18,46 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Already Registered?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Od1-2T-RmK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Already Registered?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Od1-2T-RmK">
                                 <rect key="frame" x="224" y="402" width="153" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="153" id="Hmx-Sd-7BY"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="swV-cS-uNJ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="swV-cS-uNJ">
                                 <rect key="frame" x="212" y="109" width="177" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="177" id="MtC-iy-NRb"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u6j-x7-yRj">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u6j-x7-yRj">
                                 <rect key="frame" x="212" y="161" width="177" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="177" id="yuC-ex-gZK"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2NL-I0-8oh">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2NL-I0-8oh">
                                 <rect key="frame" x="273" y="348" width="55" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="55" id="rmW-iG-P3t"/>
-                                </constraints>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fR9-eu-OZg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c86-EU-Ln0">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c86-EU-Ln0">
                                 <rect key="frame" x="281" y="468" width="38" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="38" id="uy4-A5-C1X"/>
-                                </constraints>
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Cy-Hi-bhL"/>
@@ -81,18 +66,6 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="c86-EU-Ln0" firstAttribute="top" secondItem="Od1-2T-RmK" secondAttribute="bottom" constant="8" id="4t8-fy-ToH"/>
-                            <constraint firstItem="u6j-x7-yRj" firstAttribute="top" secondItem="swV-cS-uNJ" secondAttribute="bottom" constant="22" id="9Qp-vw-hlQ"/>
-                            <constraint firstItem="c86-EU-Ln0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AcC-pR-FSr"/>
-                            <constraint firstItem="u6j-x7-yRj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EcJ-j7-eaZ"/>
-                            <constraint firstItem="2NL-I0-8oh" firstAttribute="top" secondItem="u6j-x7-yRj" secondAttribute="bottom" constant="29" id="Gmm-pP-c1H"/>
-                            <constraint firstItem="2NL-I0-8oh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HBM-Fj-xl4"/>
-                            <constraint firstItem="swV-cS-uNJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KIt-Hf-KNW"/>
-                            <constraint firstItem="Od1-2T-RmK" firstAttribute="top" secondItem="2NL-I0-8oh" secondAttribute="bottom" constant="39" id="Qvi-cI-6Cy"/>
-                            <constraint firstItem="swV-cS-uNJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="89" id="ZpP-Ej-XWO"/>
-                            <constraint firstItem="Od1-2T-RmK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ePC-Gh-hkl"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="email" destination="ntS-5Q-KB2" id="LY6-DG-f9l"/>
@@ -120,12 +93,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Policies and Agreement" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="7tl-r3-g3t">
-                                <rect key="frame" x="20" y="50" width="560" height="530"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIK-pA-5ig">
                                 <rect key="frame" x="20" y="20" width="61" height="30"/>
                                 <state key="normal" title="Disagree"/>
@@ -140,6 +107,44 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="zRy-8N-J0i"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7tl-r3-g3t">
+                                <rect key="frame" x="20" y="50" width="560" height="1934.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Welcome to Smartket’s user agreement document. Any person who wants to use the service provided by Smartket (the “App”) must accept all terms and conditions of this User Agreement (the “Agreement”) as it is stated in this document. 
+
+BY REGISTERING FOR AND USING THE SERVICES, YOU AGREE TO BE BOUND BY ALL TERMS AND CONDITIONS OF THIS AGREEMENT.
+
+Smartket and its producers (“we”, “us”, “our”) reserve all rights to change and modify the following terms and agreements with or without prior consent or notification to the users. 
+
+By using our service, you are agreeing to the following terms: 
+
+Signup. Any user who signs up to the services of this app (the “service” or “services”) must put down all required information in the signup page of this app. All information must be real and proper. No fake information may be entered during the signup processes. 
+
+Definition of “Transaction” 
+
+Beginning of a Transaction. In any given transaction, a transaction begins when a buyer sends an email or a text message to a seller, notifying the latter of the former’s intent to purchase. 
+Ending of a Transaction. In any given transaction, a transaction finalizes when a seller presses on the “finalize transaction” button in the app’s “history” page. 
+Renegotiations or Returns. No transaction that was finalized (see 2.b.) can be restarted through Smartket and its services. All completed transactions are final. 
+
+Transaction Guidelines
+
+Changes in Transactions. The sellers should not change the specificity of transactions, including, but not limited to, the goods themselves, the cost of the goods, the venue and the time of transactions, unless the buyer is notified prior to their receiving of the goods. 
+Venue. The physical portion of the transaction, including, but not limited to, the actual exchanging of money and goods, should occur in a safe and responsible place to which both the buyers and the sellers agree beforehand. 
+Specifics of Transactions. All information pertaining to a transaction, including, but not limited to, venue of the transaction, time of the transaction, good(s) involved in the transaction, should be real and proper. Sellers may not use false information in describing the details of a transaction, including, but not limited to, the good(s), the venue, or the time involved in the transaction. 
+Method of Transaction. All transaction should be carried out using cash, in the form of any legal tender of the country/community where the transaction is occurring in. No credit card or any other non-cash method of transaction is allowed in a Smartket transaction. 
+
+Smartket’s Role. The app provides a platform on which the buyers and the sellers can interact and purchase/sell items. Smartket is not involved directly in any of the transactions carried out via the Smartket platform. No money should be handed out to Smartket or any of our services directly, as we are not involved in any direct financial transaction. Users will use this platform and and of its services at their own risk. 
+
+Legal Issues
+Compliance with Laws. Every component of any transaction carried through this service, including, but not limited to, the venue of the transaction, the exchange of goods and money, the time of the transaction, any verbal or physical exchanges that may happen before, during, or after any transactions that pertains to the service provided by the app, must adhere to any institutional rules, local law, state law, federal law, or any other legally binding law that is present in the venue of the transactions and any communities that both the buyers and the sellers are in part of. We are not responsible for any outcome that might result from failing to adhere to this clause or any other clauses listed in this document. 
+Damages Incurred. We are not responsible for any fraudulent behaviours, any losses incurred before, during or after the transaction or any other events or issues, including, but not restricted to, financial, physical issues.
+Information Requested. In case of request for release of information by an authority, we reserve all rights to determine whether it is apt for the information requested to be released. 
+Investigation. Smartket has the right, but not the obligation, to launch an internal investigation if an illegal action is suspected. We reserve the right and has absolute discretion to remove, screen, or edit any content that violates these provisions or is otherwise objectionable.
+
+</mutableString>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -156,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kbe-3t-BcA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1394" y="-815"/>
+            <point key="canvasLocation" x="1460" y="-1202"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="FTv-hJ-mBT">
@@ -424,7 +429,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOE-sq-DTr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOE-sq-DTr">
                                 <rect key="frame" x="276" y="28" width="48" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="48" id="IJI-bx-QxH"/>

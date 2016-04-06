@@ -65,6 +65,8 @@ class LoginViewController: UIViewController {
             let user = PFUser()
             user.username = username.text
             user.password = password.text
+            user["phone"] = phoneNumber.text
+            user.email = email.text
             
             // Parse original Sign Up Function!!!
             user.signUpInBackgroundWithBlock({ (success, error) -> Void in
