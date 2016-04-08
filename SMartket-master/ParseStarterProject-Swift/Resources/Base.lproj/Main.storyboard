@@ -100,17 +100,17 @@
                                     <action selector="disagree:" destination="HsW-7F-DX6" eventType="touchUpInside" id="0En-hl-LMb"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ea8-NX-wrf">
-                                <rect key="frame" x="539" y="20" width="41" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ea8-NX-wrf">
+                                <rect key="frame" x="537" y="20" width="41" height="30"/>
                                 <state key="normal" title="Agree"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="zRy-8N-J0i"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7tl-r3-g3t">
-                                <rect key="frame" x="20" y="50" width="560" height="1934.5"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tl-r3-g3t">
+                                <rect key="frame" x="20" y="50" width="560" height="530"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Welcome to Smartket’s user agreement document. Any person who wants to use the service provided by Smartket (the “App”) must accept all terms and conditions of this User Agreement (the “Agreement”) as it is stated in this document. 
+                                <string key="text">Welcome to Smartket’s user agreement document. Any person who wants to use the service provided by Smartket (the “App”) must accept all terms and conditions of this User Agreement (the “Agreement”) as it is stated in this document. 
 
 BY REGISTERING FOR AND USING THE SERVICES, YOU AGREE TO BE BOUND BY ALL TERMS AND CONDITIONS OF THIS AGREEMENT.
 
@@ -141,7 +141,7 @@ Damages Incurred. We are not responsible for any fraudulent behaviours, any loss
 Information Requested. In case of request for release of information by an authority, we reserve all rights to determine whether it is apt for the information requested to be released. 
 Investigation. Smartket has the right, but not the obligation, to launch an internal investigation if an illegal action is suspected. We reserve the right and has absolute discretion to remove, screen, or edit any content that violates these provisions or is otherwise objectionable.
 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -175,8 +175,8 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wch-zX-E87">
-                                <rect key="frame" x="285" y="193" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wch-zX-E87">
+                                <rect key="frame" x="285" y="149" width="30" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="Fdh-y0-VvA"/>
                                 </constraints>
@@ -188,8 +188,8 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                                     </segue>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iu4-SR-0de">
-                                <rect key="frame" x="285" y="267" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iu4-SR-0de">
+                                <rect key="frame" x="285" y="226" width="30" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="VGx-zy-xQ2"/>
                                 </constraints>
@@ -201,14 +201,6 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                                     </segue>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Taw-Da-wkJ">
-                                <rect key="frame" x="272" y="319" width="57" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="57" id="7Cw-dJ-dKE"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="History"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="STUDENT NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="on0-84-7US">
                                 <rect key="frame" x="215" y="28" width="170" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -218,18 +210,16 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Taw-Da-wkJ" firstAttribute="centerX" secondItem="eg5-9D-4uN" secondAttribute="centerX" id="LcC-vw-AB6"/>
                             <constraint firstItem="iu4-SR-0de" firstAttribute="centerX" secondItem="eg5-9D-4uN" secondAttribute="centerX" id="Wgf-9V-C1J"/>
                             <constraint firstItem="wch-zX-E87" firstAttribute="centerX" secondItem="eg5-9D-4uN" secondAttribute="centerX" id="bgC-tX-kPR"/>
                             <constraint firstItem="iu4-SR-0de" firstAttribute="top" secondItem="wch-zX-E87" secondAttribute="bottom" constant="44" id="gZt-dk-LLk"/>
                             <constraint firstItem="wch-zX-E87" firstAttribute="top" secondItem="Mc7-r2-DKs" secondAttribute="bottom" constant="129" id="rFn-be-TBr"/>
-                            <constraint firstItem="Taw-Da-wkJ" firstAttribute="top" secondItem="iu4-SR-0de" secondAttribute="bottom" constant="22" id="scI-Vg-Ee9"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gS7-Y0-HRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1220" y="-525"/>
+            <point key="canvasLocation" x="2412" y="-1053"/>
         </scene>
         <!--Buy-->
         <scene sceneID="VAS-DX-VKS">
@@ -430,7 +420,7 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOE-sq-DTr">
-                                <rect key="frame" x="276" y="28" width="48" height="33"/>
+                                <rect key="frame" x="276" y="28" width="48" height="33.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="48" id="IJI-bx-QxH"/>
                                 </constraints>
@@ -438,16 +428,16 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Item" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zP5-3I-9At">
-                                <rect key="frame" x="222" y="120" width="156" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Item" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zP5-3I-9At">
+                                <rect key="frame" x="222" y="76" width="156" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="156" id="TYu-Ry-5np"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Condition of Item" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q2p-i3-332">
-                                <rect key="frame" x="209" y="206" width="183" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Condition of Item" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q2p-i3-332">
+                                <rect key="frame" x="209" y="162" width="183" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="183" id="dwX-R2-6aY"/>
                                 </constraints>
@@ -471,13 +461,13 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                                     </segue>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount in Dollars" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NKB-cA-rlZ">
-                                <rect key="frame" x="222" y="158" width="156" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount in Dollars" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NKB-cA-rlZ">
+                                <rect key="frame" x="222" y="114" width="156" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ISBN (optional)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6NW-Qh-3Ff">
-                                <rect key="frame" x="207" y="244" width="187" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ISBN (optional)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6NW-Qh-3Ff">
+                                <rect key="frame" x="207" y="200" width="187" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="187" id="aKJ-zL-4rJ"/>
                                 </constraints>

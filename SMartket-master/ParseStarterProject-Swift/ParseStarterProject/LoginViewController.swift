@@ -42,9 +42,9 @@ class LoginViewController: UIViewController {
     @IBAction func signUp(sender: AnyObject) {
      
         
-        if username.text == "" || password.text == "" {
+        if username.text == "" || password.text == "" || phoneNumber.text == "" || email.text == ""{
             
-            displayAlert("Error in form", message: "Please enter a username and password")
+            displayAlert("Error in form", message: "Please enter a username, password, phone and email")
             
             
         } else {
