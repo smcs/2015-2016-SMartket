@@ -16,11 +16,14 @@ Don't need to make a seperate class for it.
 import Parse
 import UIKit
 
+
+// empty string array
+var objectIds = [String]()
+
 class BuyTableViewController: UITableViewController {
 
-    // save objectIds to an array
     
-    var objectIds = [String]() // empty string array
+    // save objectIds to an array
     func loadDataFromParse () {
         
         let query = PFQuery(className:"Data")
@@ -29,9 +32,11 @@ class BuyTableViewController: UITableViewController {
             if error == nil {
                 // The find succeeded.
                 print("Successfully retrieved \(objects!.count) scores.")
+                
                 // Add found objectIds to an array
                 for object in objects! {
-                    self.objectIds.append(object.objectId! as String)
+                    objectIds.append(object.objectId! as String)
+                    print(objectIds)
                 }
             } else {
                 print(error)
@@ -61,23 +66,25 @@ class BuyTableViewController: UITableViewController {
         
         for var i = 0; i < objectIds.count; i++ {
         
-        query.getObjectInBackgroundWithId(objectIds[i]) {
-            (object: PFObject?, error: NSError?) -> Void in
-            if error == nil && object != nil {
-                print(object)
+            query.getObjectInBackgroundWithId(objectIds[i]) {
+                (object: PFObject?, error: NSError?) -> Void in
+                if error == nil && object != nil {
+                    print(object)
                 
                 // success: print out name, price, and condition on each cell!!!
                 //
                 // *************
                 
+                    
+                    
                 
-            } else {
+                } else {
                 print(error)
                 
                 
                 
+                }
             }
-        }
 
         }
     }
