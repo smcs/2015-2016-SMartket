@@ -18,6 +18,31 @@ import UIKit
 
 class BuyTableViewController: UITableViewController {
 
+    // save objectIds to an array
+    
+    var objectIds = [String]() // empty string array
+    func loadDataFromParse () {
+        
+        let query = PFQuery(className:"Data")
+        
+        query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+            if error == nil {
+                // The find succeeded.
+                print("Successfully retrieved \(objects!.count) scores.")
+                // Add found objectIds to an array
+                for object in objects! {
+                    self.objectIds.append(object.objectId! as String)
+                }
+            } else {
+                print(error)
+            }
+            
+        }
+
+            
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,6 +51,35 @@ class BuyTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        
+        loadDataFromParse()
+
+        // Recall from Parse
+        
+        let query = PFQuery(className:"Data")
+        
+        for var i = 0; i < objectIds.count; i++ {
+        
+        query.getObjectInBackgroundWithId(objectIds[i]) {
+            (object: PFObject?, error: NSError?) -> Void in
+            if error == nil && object != nil {
+                print(object)
+                
+                // success: print out name, price, and condition on each cell!!!
+                //
+                // *************
+                
+                
+            } else {
+                print(error)
+                
+                
+                
+            }
+        }
+
+        }
     }
 
     override func didReceiveMemoryWarning() {
