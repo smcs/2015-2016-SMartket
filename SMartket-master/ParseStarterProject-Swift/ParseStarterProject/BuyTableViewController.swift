@@ -16,15 +16,14 @@ Don't need to make a seperate class for it.
 import Parse
 import UIKit
 
+
+// empty string array
+var objectIds = [String]()
+
 class BuyTableViewController: UITableViewController {
 
+    
     // save objectIds to an array
-    
-    var objectIds = [String]() // empty string array
-    var items = [String]()
-    
-    
-    
     func loadDataFromParse () {
         
         let query = PFQuery(className:"Data")
@@ -33,16 +32,17 @@ class BuyTableViewController: UITableViewController {
             if error == nil {
                 // The find succeeded.
                 print("Successfully retrieved \(objects!.count) scores.")
+                
                 // Add found objectIds to an array
                 for object in objects! {
-                    self.objectIds.append(object.objectId! as String)
+                    objectIds.append(object.objectId! as String)
+                    print(objectIds)
                 }
             } else {
                 print(error)
             }
             
         }
-        
 
             
     }
@@ -50,10 +50,6 @@ class BuyTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.objectIds = [String(String)]
-        
-        
-        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -66,53 +62,33 @@ class BuyTableViewController: UITableViewController {
 
         // Recall from Parse
         
-//        let query = PFQuery(className:"Data")
-//        
-//        for var i = 0; i < objectIds.count; i++ {
-//        
-//        query.getObjectInBackgroundWithId(objectIds[i]) {
-  //          (object: PFObject?, error: NSError?) -> Void in
-    //        if error == nil && object != nil {
-//                print(object)
-//                
-//                // success: print out name, price, and condition on each cell!!!
-//                //
-//                // *************
-//                
-//                
-//            } else {
-//                print(error)
-//                
-//                
-//                
-//            }
-//        }
-//
-//        }
+        let query = PFQuery(className:"Data")
+        
+        for var i = 0; i < objectIds.count; i++ {
+        
+            query.getObjectInBackgroundWithId(objectIds[i]) {
+                (object: PFObject?, error: NSError?) -> Void in
+                if error == nil && object != nil {
+                    print(object)
+                
+                // success: print out name, price, and condition on each cell!!!
+                //
+                // *************
+                
+                    
+                    
+                
+                } else {
+                print(error)
+                
+                
+                
+                }
+            }
+
+        }
     }
 
-    func addItems() {
-        
-        
-        var query = PFQuery(className: "Data")
-        
-        //run query
-        
-        query.getObjectInBackgroundWithId(objectIds[i]) {
-            (object: PFObject?, error: NSError?) -> Void in
-            if error == nil && object != nil {
-            
-                for object:PFObject! in success as [PFObject]{
-                    self.items.addObject(object)
-                }
-                
-                println(self.items)
-                self.tblTicket.reloadData()
-                
-            }}
-    }
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -127,15 +103,7 @@ class BuyTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        let itemDic:PFObject = self.items[indexPath.row] as PFObject
-        
-        cell.lblTitle.text = itemDic["Data"] as String!
-        var statusImg = itemDic["Data"] as NSString!
-        if (!statusImg.isEqualToString("None")) {
-            cell.imgStatus.image = UIImage(named: statusImg)
-        }
-        
-        return cell;
+        return 0
     }
 
     /*
