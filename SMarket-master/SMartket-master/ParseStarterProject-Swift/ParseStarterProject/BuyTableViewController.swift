@@ -18,11 +18,11 @@ import UIKit
 
 
 // empty string array
-var objectIds = [String]()
+var name = [String]()
 
 class BuyTableViewController: UITableViewController {
 
-    
+    /*
     // save objectIds to an array
     func loadDataFromParse () {
         
@@ -35,8 +35,8 @@ class BuyTableViewController: UITableViewController {
                 
                 // Add found objectIds to an array
                 for object in objects! {
-                    objectIds.append(object.objectId! as String)
-                    print(objectIds)
+                    name.append(object.objectId! as String)
+                    print(name)
                 }
             } else {
                 print(error)
@@ -46,7 +46,7 @@ class BuyTableViewController: UITableViewController {
 
             
     }
-    
+    */
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,16 +57,16 @@ class BuyTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        
+        /*
         loadDataFromParse()
 
         // Recall from Parse
         
         let query = PFQuery(className:"Data")
         
-        for var i = 0; i < objectIds.count; i++ {
+        for var i = 0; i < name.count; i++ {
         
-            query.getObjectInBackgroundWithId(objectIds[i]) {
+            query.getObjectInBackgroundWithId(name[i]) {
                 (object: PFObject?, error: NSError?) -> Void in
                 if error == nil && object != nil {
                     print(object)
@@ -87,6 +87,23 @@ class BuyTableViewController: UITableViewController {
             }
 
         }
+        */
+        
+        // putting data in an array into the cells
+        func tableView(tableView: UITableView, numberOfRowsInSection section: Int) ->Int {
+            return name.count
+        }
+        
+        
+        func tableview(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+            
+            var cell = UITableViewCell()
+            let data = name[indexPath.row]
+            cell.textLabel?.text = data
+            return cell
+            
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
