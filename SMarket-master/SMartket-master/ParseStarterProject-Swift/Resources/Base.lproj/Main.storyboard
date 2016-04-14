@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,13 +18,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="St._Mark's_School,_Southborough,_MA_-_IMG_0592 2" translatesAutoresizingMaskIntoConstraints="NO" id="Ol5-kU-s8l">
-                                <rect key="frame" x="0.0" y="-1" width="600" height="601"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Already Registered?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Od1-2T-RmK">
                                 <rect key="frame" x="224" y="402" width="153" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="swV-cS-uNJ">
@@ -38,12 +35,17 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2NL-I0-8oh">
-                                <rect key="frame" x="334" y="333" width="55" height="30"/>
-                                <state key="normal" title="Sign Up">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <rect key="frame" x="273" y="348" width="55" height="30"/>
+                                <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fR9-eu-OZg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c86-EU-Ln0">
+                                <rect key="frame" x="281" y="468" width="38" height="30"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Cy-Hi-bhL"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Xf-ME-h6M">
@@ -56,21 +58,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SMartket" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJb-PQ-6Nb">
-                                <rect key="frame" x="249" y="52" width="102" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SmartKit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJb-PQ-6Nb">
+                                <rect key="frame" x="254" y="52" width="92" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c86-EU-Ln0">
-                                <rect key="frame" x="212" y="333" width="38" height="30"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="logIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Cy-Hi-bhL"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -112,7 +105,7 @@
                                 <rect key="frame" x="537" y="20" width="41" height="30"/>
                                 <state key="normal" title="Agree"/>
                                 <connections>
-                                    <segue destination="hc8-QG-eFQ" kind="show" id="Qch-FC-fWw"/>
+                                    <segue destination="NRk-co-QCh" kind="show" id="Qch-FC-fWw"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7tl-r3-g3t">
@@ -174,7 +167,7 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
         <!--View Controller-->
         <scene sceneID="FTv-hJ-mBT">
             <objects>
-                <viewController storyboardIdentifier="navigationController" id="hc8-QG-eFQ" customClass="ViewController" customModule="ParseStarterProject_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="newView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hc8-QG-eFQ" customClass="ViewController" customModule="ParseStarterProject_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mc7-r2-DKs"/>
                         <viewControllerLayoutGuide type="bottom" id="TGe-zW-tar"/>
@@ -183,20 +176,28 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="St._Mark's_School,_Southborough,_MA_-_IMG_0592 2" translatesAutoresizingMaskIntoConstraints="NO" id="M5i-SA-eXa">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wch-zX-E87">
-                                <rect key="frame" x="230" y="148" width="30" height="33"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wch-zX-E87">
+                                <rect key="frame" x="285" y="149" width="30" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="Fdh-y0-VvA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Buy">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <state key="normal" title="Buy"/>
                                 <connections>
                                     <segue destination="PFH-ev-uee" kind="show" id="obQ-C9-gJO">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iu4-SR-0de">
+                                <rect key="frame" x="285" y="226" width="30" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="VGx-zy-xQ2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Sell"/>
+                                <connections>
+                                    <segue destination="pHZ-cC-INi" kind="show" id="wQv-VQ-4aJ">
                                         <nil key="action"/>
                                     </segue>
                                 </connections>
@@ -209,26 +210,9 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="91x-HX-4L7">
                                 <rect key="frame" x="16" y="13" width="55" height="30"/>
-                                <state key="normal" title="Log Out">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                                <state key="normal" title="Log Out"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="2aF-Lj-nHy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iu4-SR-0de">
-                                <rect key="frame" x="324" y="148" width="30" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="VGx-zy-xQ2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Sell">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="pHZ-cC-INi" kind="show" id="wQv-VQ-4aJ">
-                                        <nil key="action"/>
-                                    </segue>
                                 </connections>
                             </button>
                         </subviews>
@@ -240,10 +224,11 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                             <constraint firstItem="wch-zX-E87" firstAttribute="top" secondItem="Mc7-r2-DKs" secondAttribute="bottom" constant="129" id="rFn-be-TBr"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="qsb-ZD-2LG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gS7-Y0-HRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2412" y="-1053"/>
+            <point key="canvasLocation" x="3224" y="-1053"/>
         </scene>
         <!--Buy-->
         <scene sceneID="VAS-DX-VKS">
@@ -263,7 +248,7 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                                 <rect key="frame" x="0.0" y="72" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qpH-m1-8Ys" id="N0I-0z-j6V">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -283,7 +268,7 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="hc8-QG-eFQ" kind="show" id="u6j-rD-vgf">
+                                    <segue destination="NRk-co-QCh" kind="show" id="u6j-rD-vgf">
                                         <nil key="action"/>
                                     </segue>
                                 </connections>
@@ -359,7 +344,7 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                                 <rect key="frame" x="509" y="545" width="30" height="30"/>
                                 <state key="normal" title="Buy"/>
                                 <connections>
-                                    <segue destination="hc8-QG-eFQ" kind="show" id="ovt-XO-a8m"/>
+                                    <segue destination="NRk-co-QCh" kind="show" id="ovt-XO-a8m"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price Variable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHo-VT-qYA">
@@ -473,14 +458,14 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                                 <state key="normal" title="Confirm"/>
                                 <connections>
                                     <action selector="confirmButton:" destination="pHZ-cC-INi" eventType="touchUpInside" id="cyE-TF-gAr"/>
-                                    <segue destination="hc8-QG-eFQ" kind="show" id="DBf-Ee-hb4"/>
+                                    <segue destination="NRk-co-QCh" kind="show" id="DBf-Ee-hb4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVd-gR-pki">
                                 <rect key="frame" x="20" y="550" width="48" height="30"/>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
-                                    <segue destination="hc8-QG-eFQ" kind="show" id="Nt6-0k-RHL">
+                                    <segue destination="NRk-co-QCh" kind="show" id="Nt6-0k-RHL">
                                         <nil key="action"/>
                                     </segue>
                                 </connections>
@@ -529,19 +514,29 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
             </objects>
             <point key="canvasLocation" x="1190" y="1002"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8XW-Bv-Nrg">
+            <objects>
+                <navigationController storyboardIdentifier="newViewController" automaticallyAdjustsScrollViewInsets="NO" id="NRk-co-QCh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Skv-hT-Rps">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hc8-QG-eFQ" kind="relationship" relationship="rootViewController" id="Uzf-vd-HRm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Zb-3I-IEN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2412" y="-1053"/>
+        </scene>
     </scenes>
-    <resources>
-        <image name="St._Mark's_School,_Southborough,_MA_-_IMG_0592 2" width="3264" height="2448"/>
-    </resources>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
-        <segue reference="Nt6-0k-RHL"/>
-=======
+        <segue reference="u6j-rD-vgf"/>
         <segue reference="Jbz-Vu-nTv"/>
-        <segue reference="ovt-XO-a8m"/>
->>>>>>> 8f08efb12be18631292928f858282a38ab8b5d28
-        <segue reference="wQv-VQ-4aJ"/>
+        <segue reference="hCP-kN-IZ8"/>
         <segue reference="2aF-Lj-nHy"/>
-        <segue reference="Jbz-Vu-nTv"/>
     </inferredMetricsTieBreakers>
 </document>

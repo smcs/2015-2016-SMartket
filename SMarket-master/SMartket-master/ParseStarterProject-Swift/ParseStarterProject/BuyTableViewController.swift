@@ -18,11 +18,14 @@ import UIKit
 
 
 // empty string array
-var name = [String]()
+var objectIds = [String]()
+var label = [String]()
+var price = [String]()
+var condition = [String]()
+
 
 class BuyTableViewController: UITableViewController {
-
-    /*
+    
     // save objectIds to an array
     func loadDataFromParse () {
         
@@ -31,12 +34,12 @@ class BuyTableViewController: UITableViewController {
         query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
             if error == nil {
                 // The find succeeded.
-                print("Successfully retrieved \(objects!.count) scores.")
+                print("Successfully retrieved \(objects!.count) objects.")
                 
                 // Add found objectIds to an array
                 for object in objects! {
-                    name.append(object.objectId! as String)
-                    print(name)
+                    objectIds.append(object.objectId! as String)
+                    print(objectIds)
                 }
             } else {
                 print(error)
@@ -46,7 +49,6 @@ class BuyTableViewController: UITableViewController {
 
             
     }
-    */
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,54 +59,64 @@ class BuyTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        /*
+        
         loadDataFromParse()
 
-        // Recall from Parse
+        
+      
+        // using objectIds to query other information
         
         let query = PFQuery(className:"Data")
         
-        for var i = 0; i < name.count; i++ {
+        for var i = 0; i < objectIds.count; i++ {
         
-            query.getObjectInBackgroundWithId(name[i]) {
-                (object: PFObject?, error: NSError?) -> Void in
-                if error == nil && object != nil {
-                    print(object)
-                
-                // success: print out name, price, and condition on each cell!!!
-                //
-                // *************
-                
+            query.getObjectInBackgroundWithId(objectIds[i]) {
+                (item: PFObject?, error: NSError?) -> Void in
+               
+                if error == nil && item != nil {
+                    print(item)
+                    // retrieval succeeded
                     
+                    // append information to the corresponding empty array
+                    label.append(item!["name"] as! String)
+                    price.append(item!["price"] as! String)
+                    condition.append(item!["condition"] as! String)
                     
-                
                 } else {
-                print(error)
-                
-                
+                    // retrieval failed
+                    print(error)
                 
                 }
             }
 
         }
-        */
-        
-        // putting data in an array into the cells
-        func tableView(tableView: UITableView, numberOfRowsInSection section: Int) ->Int {
-            return name.count
-        }
         
         
-        func tableview(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-            
-            var cell = UITableViewCell()
-            let data = name[indexPath.row]
-            cell.textLabel?.text = data
-            return cell
-            
-        }
+        
+        
+       
         
     }
+    
+    // creating cells
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return objectIds.count
+    }
+    
+    // putting information into cells
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        var cell = UITableViewCell()
+        
+        cell.textLabel?.text = label[indexPath.row] + " " + price[indexPath.row] + " " + condition[indexPath.row]
+        
+        return cell
+        
+    }
+  
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -113,25 +125,15 @@ class BuyTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
     }
-
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
+    
 
     /*
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
-        return cell
-    }
-    */
+        */
 
     /*
     // Override to support conditional editing of the table view.
