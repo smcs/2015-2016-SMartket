@@ -37,16 +37,18 @@ class SellViewController: UIViewController {
                 
                 let alertController = UIAlertController(title: "Upload Successful", message: "You have successfully uploaded your item onto the list", preferredStyle: UIAlertControllerStyle.Alert)
                 
+                self.presentViewController(alertController, animated: true, completion: nil)
                 alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) -> Void in
                     
                     let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
                     
+                    var vc: UINavigationController = self.storyboard?.instantiateViewControllerWithIdentifier("newViewController") as! UINavigationController
                    
+                    self.presentViewController(vc, animated: true, completion: nil)
                  
                 }))
                     
                     
-                self.presentViewController(alertController, animated: true, completion: nil)
                 
                 
         
