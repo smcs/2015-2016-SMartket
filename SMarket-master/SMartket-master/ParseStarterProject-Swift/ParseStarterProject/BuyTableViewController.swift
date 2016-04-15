@@ -75,8 +75,8 @@ class BuyTableViewController: UITableViewController {
                 //
                 // *************
                 
-                    
-                    
+                
+                
                 
                 } else {
                 print(error)
