@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -228,7 +228,7 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gS7-Y0-HRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3224" y="-1053"/>
+            <point key="canvasLocation" x="2534" y="-145"/>
         </scene>
         <!--Buy-->
         <scene sceneID="VAS-DX-VKS">
@@ -248,7 +248,7 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                                 <rect key="frame" x="0.0" y="72" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qpH-m1-8Ys" id="N0I-0z-j6V">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -283,7 +283,7 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcw-aq-9k4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1942" y="218"/>
+            <point key="canvasLocation" x="1952" y="636"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xdQ-MN-fNi">
@@ -344,7 +344,7 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                                 <rect key="frame" x="509" y="545" width="30" height="30"/>
                                 <state key="normal" title="Buy"/>
                                 <connections>
-                                    <segue destination="NRk-co-QCh" kind="show" id="ovt-XO-a8m"/>
+                                    <segue destination="hc8-QG-eFQ" kind="show" id="vCO-mB-s21"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price Variable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHo-VT-qYA">
@@ -396,7 +396,7 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iri-eK-K2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2662" y="228"/>
+            <point key="canvasLocation" x="2646" y="530"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QpU-24-Gvi">
@@ -530,13 +530,14 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Zb-3I-IEN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2412" y="-1053"/>
+            <point key="canvasLocation" x="2212" y="-743"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="u6j-rD-vgf"/>
-        <segue reference="Jbz-Vu-nTv"/>
-        <segue reference="hCP-kN-IZ8"/>
         <segue reference="2aF-Lj-nHy"/>
+        <segue reference="vCO-mB-s21"/>
+        <segue reference="Jbz-Vu-nTv"/>
+        <segue reference="u6j-rD-vgf"/>
+        <segue reference="hCP-kN-IZ8"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -107,7 +107,7 @@ class BuyTableViewController: UITableViewController {
     // putting information into cells
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        var cell = UITableViewCell()
+        let cell = UITableViewCell()
         
         cell.textLabel?.text = label[indexPath.row] + " " + price[indexPath.row] + " " + condition[indexPath.row]
         
