@@ -176,19 +176,6 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wch-zX-E87">
-                                <rect key="frame" x="285" y="149" width="30" height="33"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="Fdh-y0-VvA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Buy"/>
-                                <connections>
-                                    <segue destination="PFH-ev-uee" kind="show" id="obQ-C9-gJO">
-                                        <nil key="action"/>
-                                    </segue>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iu4-SR-0de">
                                 <rect key="frame" x="285" y="226" width="30" height="33"/>
                                 <constraints>
@@ -212,7 +199,18 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                                 <rect key="frame" x="16" y="13" width="55" height="30"/>
                                 <state key="normal" title="Log Out"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="2aF-Lj-nHy"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="buyController" id="2aF-Lj-nHy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wch-zX-E87">
+                                <rect key="frame" x="285" y="149" width="30" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="Fdh-y0-VvA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Buy"/>
+                                <connections>
+                                    <segue destination="i97-sv-eEt" kind="show" identifier="buyController" id="oli-01-cww"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -239,13 +237,13 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="9pj-m0-1ig">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCells" id="qpH-m1-8Ys">
-                                <rect key="frame" x="0.0" y="72" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="136" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qpH-m1-8Ys" id="N0I-0z-j6V">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -268,7 +266,7 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="NRk-co-QCh" kind="show" id="u6j-rD-vgf">
+                                    <segue destination="NRk-co-QCh" kind="show" identifier="" id="u6j-rD-vgf">
                                         <nil key="action"/>
                                     </segue>
                                 </connections>
@@ -283,7 +281,7 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcw-aq-9k4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1942" y="218"/>
+            <point key="canvasLocation" x="4070" y="-441"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xdQ-MN-fNi">
@@ -396,7 +394,7 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iri-eK-K2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2662" y="228"/>
+            <point key="canvasLocation" x="2662" y="666"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QpU-24-Gvi">
@@ -517,6 +515,7 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
         <!--Navigation Controller-->
         <scene sceneID="8XW-Bv-Nrg">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Zb-3I-IEN" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="newViewController" automaticallyAdjustsScrollViewInsets="NO" id="NRk-co-QCh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Skv-hT-Rps">
@@ -528,15 +527,14 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                         <segue destination="hc8-QG-eFQ" kind="relationship" relationship="rootViewController" id="Uzf-vd-HRm"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Zb-3I-IEN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2412" y="-1053"/>
+            <point key="canvasLocation" x="2450" y="-1079"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="u6j-rD-vgf"/>
-        <segue reference="Jbz-Vu-nTv"/>
-        <segue reference="hCP-kN-IZ8"/>
+        <segue reference="oli-01-cww"/>
+        <segue reference="wQv-VQ-4aJ"/>
         <segue reference="2aF-Lj-nHy"/>
     </inferredMetricsTieBreakers>
 </document>
