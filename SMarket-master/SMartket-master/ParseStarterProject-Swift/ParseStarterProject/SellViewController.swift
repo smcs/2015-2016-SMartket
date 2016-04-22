@@ -40,11 +40,18 @@ class SellViewController: UIViewController {
                 self.presentViewController(alertController, animated: true, completion: nil)
                 alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: { (UIAlertAction) -> Void in
                     
-                    alertController.dismissViewControllerAnimated(true, completion: nil)
+                    let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
                     
+                    var vc: UINavigationController = self.storyboard?.instantiateViewControllerWithIdentifier("newViewController") as! UINavigationController
+                   
+                    self.presentViewController(vc, animated: true, completion: nil)
+                 
                 }))
-            
+                    
+                    
                 
+                
+        
             } else {
                 error!.description
             }
