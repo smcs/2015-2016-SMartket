@@ -32,17 +32,16 @@ class BuyTableViewController: UITableViewController {
         let query = PFQuery(className:"Data")
         
         query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
-            if error == nil {
+            if error == nil  {
                 // The find succeeded.
                 print("Successfully retrieved \(objects!.count) objects.")
                 
                 // Add found objectIds to an array
                 for object in objects! {
                     objectIds.append(object.objectId! as String)
-                    print(objectIds)
                 }
             } else {
-                print(error)
+                print("error")
             }
             
         }
@@ -65,30 +64,28 @@ class BuyTableViewController: UITableViewController {
 
         
         
-        // using objectIDs to query other information
-        
-        var query:PFQuery = PFQuery(className: "Data")
-        query.whereKey("objectId", equalTo: objectIds)
-        
-        query.findObjectsInBackgroundWithBlock {
-            (object, error) -> Void in
-            if error == nil
-            {
-                print("Successfully retrieved \(object!.count) records.")
+        // using objectIDs array to query other information
+        /*
+        var search:PFQuery = PFQuery(className: "Data")
+        search.getObjectInBackgroundWithId() {
+            (object: PFObject?, error: NSError?) -> Void in
+            if error == nil && object != nil {
+                label.append(object!["name"] as! String)
+                price.append(object!["price"] as! String)
+                condition.append(object!["condition"] as! String)
                 
+                print(label)
+                print(price)
+                print(condition)
                 
-                
-                
+            } else {
+                print(error)
             }
         }
-        
-        
-        
-        
-
-       
+       */
         
     }
+
     
     // creating cells
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -101,7 +98,7 @@ class BuyTableViewController: UITableViewController {
         
         let cell = UITableViewCell()
         
-        cell.textLabel?.text = label[indexPath.row] + " " + price[indexPath.row] + " " + condition[indexPath.row]
+        cell.textLabel?.text = label[indexPath.row]
         
         return cell
         
@@ -172,6 +169,5 @@ class BuyTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
 
