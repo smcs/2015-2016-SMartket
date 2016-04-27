@@ -61,39 +61,31 @@ class BuyTableViewController: UITableViewController {
         
         
         loadDataFromParse()
+        print(objectIds)
 
         
-      
-        // using objectIds to query other information
         
-        let query = PFQuery(className:"Data")
+        // using objectIDs to query other information
         
-        for var i = 0; i < objectIds.count; i++ {
+        var query:PFQuery = PFQuery(className: "Data")
+        query.whereKey("objectId", equalTo: objectIds)
         
-            query.getObjectInBackgroundWithId(objectIds[i]) {
-                (item: PFObject?, error: NSError?) -> Void in
-               
-                if error == nil && item != nil {
-                    print(item)
-                    // retrieval succeeded
-                    
-                    // append information to the corresponding empty array
-                    label.append(item!["name"] as! String)
-                    price.append(item!["price"] as! String)
-                    condition.append(item!["condition"] as! String)
-                    
-                } else {
-                    // retrieval failed
-                    print(error)
+        query.findObjectsInBackgroundWithBlock {
+            (object, error) -> Void in
+            if error == nil
+            {
+                print("Successfully retrieved \(object!.count) records.")
                 
-                }
+                
+                
+                
             }
-
         }
         
         
         
         
+
        
         
     }
@@ -131,6 +123,7 @@ class BuyTableViewController: UITableViewController {
         return 0
     }
     
+
 
     /*
         */
@@ -181,3 +174,4 @@ class BuyTableViewController: UITableViewController {
     */
 
 }
+
