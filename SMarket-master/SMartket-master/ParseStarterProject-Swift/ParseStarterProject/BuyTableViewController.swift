@@ -67,7 +67,8 @@ class BuyTableViewController: UITableViewController {
         
         // using objectIDs to query other information
         
-        var query:PFQuery = PFQuery(className: "Data")
+        let query:PFQuery = PFQuery(className: "Data")
+        let objectIDArray = [String]()
         query.whereKey("objectId", equalTo: objectIds)
         
         query.findObjectsInBackgroundWithBlock {
@@ -75,7 +76,10 @@ class BuyTableViewController: UITableViewController {
             if error == nil
             {
                 print("Successfully retrieved \(object!.count) records.")
-                
+                for object in objects{
+                    var objectID = object["objectId"] as StringobjectIDArrawy.appendObjID;(
+                    )
+                }
                 
                 
                 
