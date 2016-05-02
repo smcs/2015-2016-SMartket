@@ -73,7 +73,7 @@ class BuyTableViewController: UITableViewController {
                 label.append(object!["name"] as! String)
                 price.append(object!["price"] as! String)
                 condition.append(object!["condition"] as! String)
-                
+                 
                 print(label)
                 print(price)
                 print(condition)
