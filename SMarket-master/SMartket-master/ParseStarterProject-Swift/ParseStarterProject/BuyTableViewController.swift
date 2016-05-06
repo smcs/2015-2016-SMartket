@@ -22,12 +22,43 @@ var objectIds = [String]()
 var label = [String]()
 var price = [String]()
 var condition = [String]()
+var array = NSMutableArray()
 
 
 class BuyTableViewController: UITableViewController {
     
+    
+//    func loadData1() {
+//        
+//        var query = PFQuery(className: "ParseClass")
+//        
+//        query.orderByAscending("column")
+//        
+//        query.findObjectsInBackgroundWithBlock { (objects: [AnyObject]!, error: NSError?) -> Void in
+//            
+//            if error == nil {
+//                
+//                //loop your objects array
+//                for object in objects{
+//                    
+//                    let yourObject = object as! PFObject
+//                    //add your element into array
+//                    self.array.addObject(yourObject)
+//                }
+//                
+//                let tempArr :NSArray = self.array.reverseObjectEnumerator().allObjects
+//                self.array = NSMutableArray(array: tempArr)
+//                
+//            } else {
+//                
+//                println( error?.userInfo )
+//            }
+//        }
+//        
+//    }
+    
     // save objectIds to an array
-    func loadDataFromParse () {
+ /*   func loadDataFromParse () {
         
         let query = PFQuery(className:"Data")
         
@@ -47,7 +78,10 @@ class BuyTableViewController: UITableViewController {
         }
 
             
-    }
+    }*/
+    
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -73,7 +107,7 @@ class BuyTableViewController: UITableViewController {
                 label.append(object!["name"] as! String)
                 price.append(object!["price"] as! String)
                 condition.append(object!["condition"] as! String)
-                 
+        
                 print(label)
                 print(price)
                 print(condition)
