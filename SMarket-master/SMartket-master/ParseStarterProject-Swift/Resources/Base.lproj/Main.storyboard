@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -277,7 +277,7 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gS7-Y0-HRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2534" y="-145"/>
+            <point key="canvasLocation" x="2850" y="70"/>
         </scene>
         <!--Buy-->
         <scene sceneID="VAS-DX-VKS">
@@ -502,7 +502,7 @@ Investigation. Smartket has the right, but not the obligation, to launch an inte
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iri-eK-K2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2646" y="530"/>
+            <point key="canvasLocation" x="2816" y="954"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QpU-24-Gvi">
