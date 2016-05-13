@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4B380E631CB54977000B50A6 /* PolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B380E621CB54977000B50A6 /* PolicyViewController.swift */; };
 		4B924B6B1C89D47C0008A5B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B924B6A1C89D47C0008A5B9 /* LoginViewController.swift */; };
-		4DD9203C1CDCCC8500568527 /* NewBuyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD9203B1CDCCC8500568527 /* NewBuyController.swift */; };
 		4DE4C5C11C89CB5E00B6200C /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE4C5BD1C89CB5E00B6200C /* SellViewController.swift */; };
 		4DE4C5C31C89CB5E00B6200C /* BuyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE4C5BF1C89CB5E00B6200C /* BuyTableViewController.swift */; };
 		4DE4C5C41C89CB5E00B6200C /* ListingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE4C5C01C89CB5E00B6200C /* ListingTableViewController.swift */; };
@@ -28,7 +27,6 @@
 /* Begin PBXFileReference section */
 		4B380E621CB54977000B50A6 /* PolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyViewController.swift; sourceTree = "<group>"; };
 		4B924B6A1C89D47C0008A5B9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		4DD9203B1CDCCC8500568527 /* NewBuyController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewBuyController.swift; sourceTree = "<group>"; };
 		4DE4C5BD1C89CB5E00B6200C /* SellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
 		4DE4C5BF1C89CB5E00B6200C /* BuyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyTableViewController.swift; sourceTree = "<group>"; };
 		4DE4C5C01C89CB5E00B6200C /* ListingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingTableViewController.swift; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 				814C3AC61B69877600E307BB /* Main.storyboard */,
 				4B924B6A1C89D47C0008A5B9 /* LoginViewController.swift */,
 				4B380E621CB54977000B50A6 /* PolicyViewController.swift */,
-				4DD9203B1CDCCC8500568527 /* NewBuyController.swift */,
 			);
 			path = ParseStarterProject;
 			sourceTree = "<group>";
@@ -209,7 +206,6 @@
 				4DE4C5C31C89CB5E00B6200C /* BuyTableViewController.swift in Sources */,
 				4DE4C5C11C89CB5E00B6200C /* SellViewController.swift in Sources */,
 				4B380E631CB54977000B50A6 /* PolicyViewController.swift in Sources */,
-				4DD9203C1CDCCC8500568527 /* NewBuyController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
