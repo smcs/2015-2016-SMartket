@@ -32,22 +32,24 @@ UIApplicationDelegate {
         // ****************************************************************************
         // Uncomment and fill in with your Parse credentials:
         //Parse.setApplicationId("XGmyrmsJd9f2AheL7ayHmgJKEbPm9ChbcAydfbL5", clientKey: "WRTh9AulqwyNObefsQlCY7KwmLdgBcmWXEBi4hOb")
-        //
-        
         
         Parse.setLogLevel(PFLogLevel.Info);
-
-        let config = ParseClientConfiguration(block: {
-            (ParseMutableClientConfiguration) -> Void in
-            
-                ParseMutableClientConfiguration.applicationId = "XGmyrmsJd9f2AheL7ayHmgJKEbPm9ChbcAydfbL5";
-                ParseMutableClientConfiguration.clientKey = "WRTh9AulqwyNObefsQlCY7KwmLdgBcmWXEBi4hOb";
-                ParseMutableClientConfiguration.server = "http://localhost:1337/parse";
-            });
- 
-        Parse.initializeWithConfiguration(config);
- 
         
+        
+        let config = ParseClientConfiguration(block: {(ParseMutableClientConfiguration) -> Void in
+            
+            ParseMutableClientConfiguration.applicationId = "XGmyrmsJd9f2AheL7ayHmgJKEbPm9ChbcAydfbL5";
+            
+            ParseMutableClientConfiguration.clientKey = "WRTh9AulqwyNObefsQlCY7KwmLdgBcmWXEBi4hOb";
+           
+            ParseMutableClientConfiguration.server = "http://localhost:1337/parse";
+            
+        });
+        
+            Parse.initializeWithConfiguration(config);
+        
+        
+        //
         // If you are using Facebook, uncomment and add your FacebookAppID to your bundle's plist as
         // described here: https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/
         // Uncomment the line inside ParseStartProject-Bridging-Header and the following line here:

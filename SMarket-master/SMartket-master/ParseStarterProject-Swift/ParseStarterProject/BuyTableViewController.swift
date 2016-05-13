@@ -93,8 +93,8 @@ class BuyTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         
-   //     loadDataFromParse()
-     //   print(objectIds)
+        //loadDataFromParse()
+        print(objectIds)
 
         
         
