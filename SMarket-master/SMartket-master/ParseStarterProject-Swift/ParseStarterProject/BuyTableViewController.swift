@@ -19,11 +19,9 @@ import UIKit
 
 // empty string array
 var objectIds = [String]()
-var label = [String]()
+var name = [String]()
 var price = [String]()
 var condition = [String]()
-var array = NSMutableArray()
-
 
 class BuyTableViewController: UITableViewController {
     
@@ -56,9 +54,10 @@ class BuyTableViewController: UITableViewController {
 //        }
 //        
 //    }
+
     
     // save objectIds to an array
- /*   func loadDataFromParse () {
+    func loadDataFromParse () {
         
         let query = PFQuery(className:"Data")
         
@@ -78,7 +77,10 @@ class BuyTableViewController: UITableViewController {
         }
 
             
-    }*/
+    }
+    
+    
+    
     
     
     
@@ -93,33 +95,39 @@ class BuyTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
         
+        let query = PFQuery(className: "Data")
+        query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+            
+            if error == nil {
+                //There was no error in the fetch
+                
+                if let returnedobjects = objects {
+                    
+                    //objects array isn't nil
+                    //loop through the array to get each object
+                    for object in returnedobjects {
+                        name = object["name"] as! [String]   // put name from the array into name global array
+                        price = object["price"] as! [String]  // put price from the array into price global array
+                        condition = object["condition"] as! [String]   // put condition from the array into condition global array
+                    }
+                }
+            }
+        
         //loadDataFromParse()
         print(objectIds)
 
-        
-        
-        // using objectIDs array to query other information
-        /*
-        var search:PFQuery = PFQuery(className: "Data")
-        search.getObjectInBackgroundWithId() {
-            (object: PFObject?, error: NSError?) -> Void in
-            if error == nil && object != nil {
-                label.append(object!["name"] as! String)
-                price.append(object!["price"] as! String)
-                condition.append(object!["condition"] as! String)
-        
-                print(label)
-                print(price)
-                print(condition)
-                
-            } else {
-                print(error)
-            }
         }
-       */
-        
     }
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     // creating cells
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -132,7 +140,8 @@ class BuyTableViewController: UITableViewController {
         
         let cell = UITableViewCell()
         
-        cell.textLabel?.text = label[indexPath.row]
+        //print out data onto the cell
+        cell.textLabel?.text = name[indexPath.row] + " " + price[indexPath.row] + " " + condition[indexPath.row]
         
         return cell
         
@@ -203,5 +212,5 @@ class BuyTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
-}
+    }
 
