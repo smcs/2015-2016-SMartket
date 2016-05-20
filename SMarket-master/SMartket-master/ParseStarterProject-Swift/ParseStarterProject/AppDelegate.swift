@@ -42,7 +42,7 @@ UIApplicationDelegate {
             
             ParseMutableClientConfiguration.clientKey = "WRTh9AulqwyNObefsQlCY7KwmLdgBcmWXEBi4hOb";
            
-            ParseMutableClientConfiguration.server = "http://localhost:1337/parse";
+            ParseMutableClientConfiguration.server = "https://stmarks-parse.herokuapp.com/parse";
             
         });
         

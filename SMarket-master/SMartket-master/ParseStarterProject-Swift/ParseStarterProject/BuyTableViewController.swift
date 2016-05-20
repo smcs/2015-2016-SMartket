@@ -96,7 +96,7 @@ class BuyTableViewController: UITableViewController {
         
         
         let query = PFQuery(className: "Data")
-        query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
+        query.findObjectsInBackgroundWithBlock { (objects, error) in
             
             if error == nil {
                 //There was no error in the fetch
@@ -106,7 +106,10 @@ class BuyTableViewController: UITableViewController {
                     //objects array isn't nil
                     //loop through the array to get each object
                     for object in returnedobjects {
-                        name = object["name"] as! [String]   // put name from the array into name global array
+                        
+                        print(object)
+                        
+                        name = object["name"] as! [String]  // put name from the array into name global array
                         price = object["price"] as! [String]  // put price from the array into price global array
                         condition = object["condition"] as! [String]   // put condition from the array into condition global array
                     }
