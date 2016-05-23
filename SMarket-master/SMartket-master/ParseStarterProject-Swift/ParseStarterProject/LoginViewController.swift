@@ -112,7 +112,7 @@ class LoginViewController: UIViewController {
                 print("Login Successful")
                 
                 //SEGUE TO View4      ***************************************
-                let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("navigationController")
+                let vc : AnyObject! = self.storyboard!.instantiateViewControllerWithIdentifier("PolicyViewController")
                 self.showViewController(vc as! UIViewController, sender: vc)
                 
             } else {
