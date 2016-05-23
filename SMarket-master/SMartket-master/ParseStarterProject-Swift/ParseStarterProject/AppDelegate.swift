@@ -31,8 +31,9 @@ UIApplicationDelegate {
 
         // ****************************************************************************
         // Uncomment and fill in with your Parse credentials:
-        //Parse.setApplicationId("XGmyrmsJd9f2AheL7ayHmgJKEbPm9ChbcAydfbL5", clientKey: "WRTh9AulqwyNObefsQlCY7KwmLdgBcmWXEBi4hOb")
+        Parse.setApplicationId("EGeQJDG95scp15uGG9hgQJyEWgkpsjRJRuprbCIv", clientKey: "80XAKyb1siyypHKxr1xj0fDgv46cE7FbhW1CPu6D")
         
+        /*
         Parse.setLogLevel(PFLogLevel.Info);
         
         
@@ -48,7 +49,7 @@ UIApplicationDelegate {
         
             Parse.initializeWithConfiguration(config);
         
-        
+        */
         //
         // If you are using Facebook, uncomment and add your FacebookAppID to your bundle's plist as
         // described here: https://developers.facebook.com/docs/getting-started/facebook-sdk-for-ios/
