@@ -19,9 +19,9 @@ import UIKit
 
 // empty string array
 var objectIds = [String]()
-var name = [String]()
-var price = [String]()
-var condition = [String]()
+var name = [NSString]()
+var price = [NSString]()
+var condition = [NSString]()
 
 class BuyTableViewController: UITableViewController {
     
@@ -100,26 +100,26 @@ class BuyTableViewController: UITableViewController {
             
             if error == nil {
                 //There was no error in the fetch
+                for object in objects! {
                 
-                if let returnedobjects = objects {
+                        //objects array isn't nil
+                        //loop through the array to get each object
+                        name.append(object["name"] as! NSString) //  put name from the array into name global array
+                        price.append(object["price"] as! NSString)  // put price from the array into price global array
+                        condition.append(object["condition"] as! NSString)   // put condition from the array into condition global array
                     
-                    //objects array isn't nil
-                    //loop through the array to get each object
-                    for object in returnedobjects {
-                        
-                        print(object)
-                        
-                        name = object["name"] as! [String]  // put name from the array into name global array
-                        price = object["price"] as! [String]  // put price from the array into price global array
-                        condition = object["condition"] as! [String]   // put condition from the array into condition global array
-                    }
+                    print(name, price, condition)
                 }
             }
-        
-        //loadDataFromParse()
-        print(objectIds)
-
+            else {
+                print(error)
+            }
         }
+        
+        //reloading data
+        self.tableView.reloadData()
+        
+    
     }
     
     
@@ -143,13 +143,14 @@ class BuyTableViewController: UITableViewController {
         
         let cell = UITableViewCell()
         
-        //print out data onto the cell
-        cell.textLabel?.text = name[indexPath.row] + " " + price[indexPath.row] + " " + condition[indexPath.row]
+        //print out data onto the cell ******* - PROBLEM
+        cell.textLabel?.text = (name[indexPath.row] as String) + " " + (price[indexPath.row] as String) + " " + (condition[indexPath.row] as String)
         
         return cell
         
     }
   
+    
     
     
 
