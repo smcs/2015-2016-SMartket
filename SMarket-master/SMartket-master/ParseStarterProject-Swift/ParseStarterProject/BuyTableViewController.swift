@@ -123,33 +123,34 @@ class BuyTableViewController: UITableViewController {
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
     // creating cells
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return objectIds.count
+        return name.count
     }
     
     // putting information into cells
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = UITableViewCell()
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("customcell", forIndexPath: indexPath) as! CustomCell
+        
+        print((name[indexPath.row] as String))
         
         //print out data onto the cell ******* - PROBLEM
-        cell.textLabel?.text = (name[indexPath.row] as String) + " " + (price[indexPath.row] as String) + " " + (condition[indexPath.row] as String)
+        cell.Name.text = (name[indexPath.row] as String)
+        cell.Condition.text = (price[indexPath.row] as String)
+        cell.Price.text = (condition[indexPath.row] as String)
         
         return cell
         
     }
   
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let viewController = storyboard?.instantiateViewControllerWithIdentifier("detailView")
+        
+    }
     
     
     
