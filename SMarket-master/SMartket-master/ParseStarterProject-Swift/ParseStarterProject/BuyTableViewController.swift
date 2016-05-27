@@ -23,7 +23,7 @@ var name = [NSString]()
 var price = [NSString]()
 var condition = [NSString]()
 
-class BuyTableViewController: UITableViewController {
+class BuyTableViewController: UITableViewController{
     
     
 //    func loadData1() {
@@ -132,16 +132,18 @@ class BuyTableViewController: UITableViewController {
     // putting information into cells
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("customcell", forIndexPath: indexPath) as! CustomCell
+        let userCell = self.tableView.dequeueReusableCellWithIdentifier("userCell", forIndexPath: indexPath) as! CustomCell
+        let userObject;.PFUser = users[indexPath.row]
         
         print((name[indexPath.row] as String))
+        userCell.textLabel!.text = userObject.objectForKey("name") as? String
         
         //print out data onto the cell ******* - PROBLEM
-        cell.Name.text = (name[indexPath.row] as String)
-        cell.Condition.text = (price[indexPath.row] as String)
-        cell.Price.text = (condition[indexPath.row] as String)
+        userCell.Name.text = (name[indexPath.row] as String)
+        userCell.Condition.text = (price[indexPath.row] as String)
+        userCell.Price.text = (condition[indexPath.row] as String)
         
-        return cell
+        return userCell
         
     }
   
