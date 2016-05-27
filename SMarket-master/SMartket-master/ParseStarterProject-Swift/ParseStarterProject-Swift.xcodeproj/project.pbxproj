@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4B380E631CB54977000B50A6 /* PolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B380E621CB54977000B50A6 /* PolicyViewController.swift */; };
+		4B4B6AEE1CF5E40E00001C96 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4B6AED1CF5E40E00001C96 /* CustomCell.swift */; };
+		4B4B6AF01CF5E95500001C96 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4B6AEF1CF5E95500001C96 /* DetailViewController.swift */; };
 		4B924B6B1C89D47C0008A5B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B924B6A1C89D47C0008A5B9 /* LoginViewController.swift */; };
 		4DE4C5C11C89CB5E00B6200C /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE4C5BD1C89CB5E00B6200C /* SellViewController.swift */; };
 		4DE4C5C31C89CB5E00B6200C /* BuyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE4C5BF1C89CB5E00B6200C /* BuyTableViewController.swift */; };
-		4DE4C5C41C89CB5E00B6200C /* ListingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE4C5C01C89CB5E00B6200C /* ListingTableViewController.swift */; };
 		814C3ACA1B69877600E307BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC61B69877600E307BB /* Main.storyboard */; };
 		814C3ACB1B69877600E307BB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814C3AC81B69877600E307BB /* Images.xcassets */; };
 		81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA814A1A49DA1800E65899 /* AppDelegate.swift */; };
@@ -26,10 +27,11 @@
 
 /* Begin PBXFileReference section */
 		4B380E621CB54977000B50A6 /* PolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyViewController.swift; sourceTree = "<group>"; };
+		4B4B6AED1CF5E40E00001C96 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		4B4B6AEF1CF5E95500001C96 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4B924B6A1C89D47C0008A5B9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4DE4C5BD1C89CB5E00B6200C /* SellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
 		4DE4C5BF1C89CB5E00B6200C /* BuyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuyTableViewController.swift; sourceTree = "<group>"; };
-		4DE4C5C01C89CB5E00B6200C /* ListingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingTableViewController.swift; sourceTree = "<group>"; };
 		814C3AC71B69877600E307BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		814C3AC81B69877600E307BB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		814C3AC91B69877600E307BB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,8 +99,9 @@
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				4DE4C5BD1C89CB5E00B6200C /* SellViewController.swift */,
 				4DE4C5BF1C89CB5E00B6200C /* BuyTableViewController.swift */,
-				4DE4C5C01C89CB5E00B6200C /* ListingTableViewController.swift */,
+				4B4B6AED1CF5E40E00001C96 /* CustomCell.swift */,
 				814C3AC61B69877600E307BB /* Main.storyboard */,
+				4B4B6AEF1CF5E95500001C96 /* DetailViewController.swift */,
 				4B924B6A1C89D47C0008A5B9 /* LoginViewController.swift */,
 				4B380E621CB54977000B50A6 /* PolicyViewController.swift */,
 			);
@@ -200,12 +203,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B924B6B1C89D47C0008A5B9 /* LoginViewController.swift in Sources */,
-				4DE4C5C41C89CB5E00B6200C /* ListingTableViewController.swift in Sources */,
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				4DE4C5C31C89CB5E00B6200C /* BuyTableViewController.swift in Sources */,
 				4DE4C5C11C89CB5E00B6200C /* SellViewController.swift in Sources */,
+				4B4B6AEE1CF5E40E00001C96 /* CustomCell.swift in Sources */,
 				4B380E631CB54977000B50A6 /* PolicyViewController.swift in Sources */,
+				4B4B6AF01CF5E95500001C96 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
