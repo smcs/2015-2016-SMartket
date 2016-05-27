@@ -19,7 +19,7 @@ import UIKit
 // empty string array
 var objectIds = [String]()
 
-class BuyTableViewController: UITableViewController {
+class BuyTableViewController: UITableViewController{
     
     var name = [NSString]()
     var price = [NSString]()
@@ -129,14 +129,27 @@ class BuyTableViewController: UITableViewController {
     // putting information into cells
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
+<<<<<<< HEAD
         let cell = tableView.dequeueReusableCellWithIdentifier("customcell", forIndexPath: indexPath)
         
         let(Name) = name[indexPath.row]
         
         cell.textLabel?.text = Name as String
             //(name[indexPath.row] as String) + (price[indexPath.row] as String) +(condition[indexPath.row] as String)
+=======
+        let userCell = self.tableView.dequeueReusableCellWithIdentifier("userCell", forIndexPath: indexPath) as! CustomCell
+        let userObject;.PFUser = users[indexPath.row]
         
-        return cell
+        print((name[indexPath.row] as String))
+        userCell.textLabel!.text = userObject.objectForKey("name") as? String
+        
+        //print out data onto the cell ******* - PROBLEM
+        userCell.Name.text = (name[indexPath.row] as String)
+        userCell.Condition.text = (price[indexPath.row] as String)
+        userCell.Price.text = (condition[indexPath.row] as String)
+>>>>>>> 0c4f776c8c1173140eb366588378f88de9cbcdb0
+        
+        return userCell
         
     }
   
