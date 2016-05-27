@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4B380E631CB54977000B50A6 /* PolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B380E621CB54977000B50A6 /* PolicyViewController.swift */; };
-		4B4B6AEE1CF5E40E00001C96 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4B6AED1CF5E40E00001C96 /* CustomCell.swift */; };
 		4B4B6AF01CF5E95500001C96 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B4B6AEF1CF5E95500001C96 /* DetailViewController.swift */; };
 		4B924B6B1C89D47C0008A5B9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B924B6A1C89D47C0008A5B9 /* LoginViewController.swift */; };
 		4DE4C5C11C89CB5E00B6200C /* SellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE4C5BD1C89CB5E00B6200C /* SellViewController.swift */; };
@@ -27,7 +26,6 @@
 
 /* Begin PBXFileReference section */
 		4B380E621CB54977000B50A6 /* PolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PolicyViewController.swift; sourceTree = "<group>"; };
-		4B4B6AED1CF5E40E00001C96 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		4B4B6AEF1CF5E95500001C96 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		4B924B6A1C89D47C0008A5B9 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4DE4C5BD1C89CB5E00B6200C /* SellViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SellViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				4DE4C5BD1C89CB5E00B6200C /* SellViewController.swift */,
 				4DE4C5BF1C89CB5E00B6200C /* BuyTableViewController.swift */,
-				4B4B6AED1CF5E40E00001C96 /* CustomCell.swift */,
 				814C3AC61B69877600E307BB /* Main.storyboard */,
 				4B4B6AEF1CF5E95500001C96 /* DetailViewController.swift */,
 				4B924B6A1C89D47C0008A5B9 /* LoginViewController.swift */,
@@ -207,7 +204,6 @@
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 				4DE4C5C31C89CB5E00B6200C /* BuyTableViewController.swift in Sources */,
 				4DE4C5C11C89CB5E00B6200C /* SellViewController.swift in Sources */,
-				4B4B6AEE1CF5E40E00001C96 /* CustomCell.swift in Sources */,
 				4B380E631CB54977000B50A6 /* PolicyViewController.swift in Sources */,
 				4B4B6AF01CF5E95500001C96 /* DetailViewController.swift in Sources */,
 			);

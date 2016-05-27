@@ -16,15 +16,14 @@ Don't need to make a seperate class for it.
 import Parse
 import UIKit
 
-
 // empty string array
 var objectIds = [String]()
-var name = [NSString]()
-var price = [NSString]()
-var condition = [NSString]()
 
 class BuyTableViewController: UITableViewController {
     
+    var name = [NSString]()
+    var price = [NSString]()
+    var condition = [NSString]()
     
 //    func loadData1() {
 //        
@@ -104,24 +103,22 @@ class BuyTableViewController: UITableViewController {
                 
                         //objects array isn't nil
                         //loop through the array to get each object
-                        name.append(object["name"] as! NSString) //  put name from the array into name global array
-                        price.append(object["price"] as! NSString)  // put price from the array into price global array
-                        condition.append(object["condition"] as! NSString)   // put condition from the array into condition global array
+                        self.name.append(object["name"] as! NSString) //  put name from the array into name global array
+                        self.price.append(object["price"] as! NSString)  // put price from the array into price global array
+                    self.condition.append(object["condition"] as! NSString)   // put condition from the array into condition global array
                     
-                    print(name, price, condition)
                 }
+                print(self.name)
+
             }
             else {
                 print(error)
             }
         }
         
-        //reloading data
         self.tableView.reloadData()
-        
     
     }
-    
     
     // creating cells
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -132,14 +129,12 @@ class BuyTableViewController: UITableViewController {
     // putting information into cells
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = self.tableView.dequeueReusableCellWithIdentifier("customcell", forIndexPath: indexPath) as! CustomCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("customcell", forIndexPath: indexPath)
         
-        print((name[indexPath.row] as String))
+        let(Name) = name[indexPath.row]
         
-        //print out data onto the cell ******* - PROBLEM
-        cell.Name.text = (name[indexPath.row] as String)
-        cell.Condition.text = (price[indexPath.row] as String)
-        cell.Price.text = (condition[indexPath.row] as String)
+        cell.textLabel?.text = Name as String
+            //(name[indexPath.row] as String) + (price[indexPath.row] as String) +(condition[indexPath.row] as String)
         
         return cell
         
