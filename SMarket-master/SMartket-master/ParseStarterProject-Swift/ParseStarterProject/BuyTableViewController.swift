@@ -129,7 +129,7 @@ class BuyTableViewController: UITableViewController{
     // putting information into cells
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-<<<<<<< HEAD
+//<<<<<<< HEAD
         let cell = tableView.dequeueReusableCellWithIdentifier("customcell", forIndexPath: indexPath)
         
         let(Name) = name[indexPath.row]
@@ -147,7 +147,7 @@ class BuyTableViewController: UITableViewController{
         userCell.Name.text = (name[indexPath.row] as String)
         userCell.Condition.text = (price[indexPath.row] as String)
         userCell.Price.text = (condition[indexPath.row] as String)
->>>>>>> 0c4f776c8c1173140eb366588378f88de9cbcdb0
+//>>>>>>> 0c4f776c8c1173140eb366588378f88de9cbcdb0
         
         return userCell
         
